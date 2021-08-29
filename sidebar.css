@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7b449;
+}
+
+.sidebar-icon {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #5847ad;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #8293e3;
+    color: #dde9f8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .container {
+    width: 70%;
+}
+
+.sidenav input {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #dde9f8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #c8dffb;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 8px 8px 8px 32px;
+    cursor: pointer;
+}
+
+.open {
+    width: 50%;
+}
+
+.close {
+    width: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav .container {
+        width: 100%;
+    }
+    .open {
+        width: 80%;
+    }
+}
